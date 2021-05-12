@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DR10</title>
+</head>
+
+<body>
+    <script>
+        /*Задание №1*/
+           let sum = +prompt(`Назовите порядковый номер месяца от 1 до 12, где 1 - январь`);
+      switch(sum){
+              case 1:
+              alert (`январь`);
+              break;
+              case 2:
+              alert (`февраль`);
+              break;
+              case 3:
+              alert (`март`);
+              break;
+              case 4:
+              alert (`апрель`);
+              break;
+              case 5:
+              alert (`май`);
+              break;
+              case 6:
+              alert (`июнь`);
+              break;
+               case 7:
+              alert (`июль`);
+              break;
+               case 8:
+              alert (`август`);
+              break;
+              case 9:
+              alert (`сентябрь`);
+              break;
+              case 10:
+              alert (`октябрь`);
+              break;
+              case 11:
+              alert (`ноябрь`);
+              break;
+              case 12:
+              alert (`декабрь`);
+              break;
+      }
+        
+        /*Задание №2*/
+        while (true) {
+                let val1 = Number(prompt(`Введите первое значение для рассчета`));
+                let val2 = Number(prompt(`Введите второе значение для рассчета`));
+                let multi = prompt(`Введите действие, которое хотите сделать (*) или (/) или (+) или (-)`);
+            if (val1 === isNaN || val2 === isNaN || multi === isNaN){
+                alert(`Таких действий не предусмотрено`);
+                break;
+            } 
+            else {
+            }
+       
+        switch (multi) {
+            case `*`:
+                alert(`Произведение чисел ${val1 * val2}`);
+
+                break;
+            case `-`:
+                alert(`Разность чисел ${val1 - val2}`);
+                break;
+            case `+`:
+                alert(`Сумма чисел ${val1 + val2}`);
+                break;
+            case `/`:
+                alert(`Частное чисел ${val1 / val2}`);
+                break;
+        }
+ }
+       
+    </script>
+</body>
+
+</html>
